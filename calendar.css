@@ -1,0 +1,11 @@
+html, body {
+    margin: 30;
+    padding: 30;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+
+  #calendar {
+    position: sticky;
+    margin: 40px auto;
+  }
