@@ -16,9 +16,7 @@ function calendarMain() {
     },
   locale:'pl',
     events: [],
-    eventClick: function(info) {
-      toEditItem(info.event);
-    },
+
 
   });
 
