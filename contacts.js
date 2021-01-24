@@ -114,7 +114,7 @@ searcherForm.addEventListener('sumbit', function(){
       document.getElementById('contactResults').innerHTML += '<div class="contact-item">Imię nazwiskk:'+contactResults[i].namesurname+'<br>Number telefonu::'+results[i].mobile+'<br>Email:'+results[i].email+'</div><hr>';
     }
   } else{
-   document.getElementById('contactResults').innerHTML += '<div class="contact-item">There are no results for this name</div><hr>';
+   document.getElementById('contactResults').innerHTML += '<div class="contact-item">Brak konatktu./div><hr>';
   }
 
   //do something with the results
@@ -132,7 +132,7 @@ document.getElementById('js-contact-list').addEventListener('click', function(){
         document.getElementById('panel-View').innerHTML += '<div class="contact-item">Imię i Nazwisko:'+contacts[i].namesurname+'<br>Numer telefon:'+contacts[i].mobile+'<br>Email:'+contacts[i].email+'</div><hr>';
         }
       }else{
-        document.getElementById('panel-View').innerHTML += '<div class="contact-item">You have no contacts. Why not add  a few?</div><hr>';
+        document.getElementById('panel-View').innerHTML += '<div class="contact-item">Brak kontaktów.</div><hr>';
       }
     }
     document.getElementById('panel-View').style.display = 'block';
