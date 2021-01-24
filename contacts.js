@@ -28,21 +28,19 @@
           return this;
         },
 
-        log:function(data){
-          console.log(data);
-          return this;
-        },
 
         searchContacts:function(searchConTerm){
           if(this.data.length){
             for(var i=0;i<this.data.length;i++){
-              if(this.data[i].name.toLowerCase() == searchConTerm.toLowerCase()){
+              if(this.data[i].namesurname.toLowerCase() == searchConTerm.toLowerCase()){
                 console.error(this.data[i]);
                 this.searcherResults.push(this.data[i]);
               }
             }
 
-            return this.searcherResults;
+            return this.searchResults;
+          }else{
+            console.log("There are no results");
           }
           return this;
         },
@@ -75,12 +73,8 @@ if(!window.contactList){
 
 
 var form  = document.getElementById('new-contact');
-form.addEventListener('sumbit', function(){
+form.addEventListener('submit', function(){
 
-    var contactList;
-  if(contactList !== undefined){
-    contactList = null;
-  }
 
    if(!window.contactList){
    window.contactList=$ab(form.namesurname.value,form.mobile.value,form.email.value);
@@ -97,7 +91,7 @@ form.addEventListener('sumbit', function(){
 });
 
 var searcherForm = document.getElementById('searcher');
-searcherForm.addEventListener('sumbit', function(){
+searcherForm.addEventListener('submit', function(){
   var contactResults;
   if(contactResults !== undefined){
     contactResults = null;
@@ -105,24 +99,24 @@ searcherForm.addEventListener('sumbit', function(){
   if(!window.contactList){
     window.contactList = $ab();
   }else{
-    contactResults = contactList.displayContacts(searcherForm.search.value);
+    contactResults = contactList.searchContacts(searcherForm.searcher.value);
   }
   document.getElementById('contactResults').innerHTML = '';
   if(contactResults.length>0){
 
     for(var i = 0;i<contactResults.length;i++){
-      document.getElementById('contactResults').innerHTML += '<div class="contact-item">Imię nazwiskk:'+contactResults[i].namesurname+'<br>Number telefonu::'+results[i].mobile+'<br>Email:'+results[i].email+'</div><hr>';
+      document.getElementById('contactResults').innerHTML += '<div class="contact-item">Imię nazwiskk:'+contactResults[i].namesurname+'<br>Number telefonu::'+contactResults[i].mobile+'<br>Email:'+contactResults[i].email+'</div><hr>';
     }
   } else{
-   document.getElementById('contactResults').innerHTML += '<div class="contact-item">Brak konatktu./div><hr>';
+   document.getElementById('contactResults').innerHTML += '<div class="contact-item">Brak konatktu.</div><hr>';
   }
 
-  //do something with the results
+
   event.preventDefault();
 });
 
 document.getElementById('js-contact-list').addEventListener('click', function(){
-    if(window.contactList){ //check if we already have a contact list
+    if(window.contactList){
        document.getElementById('panel-View').innerHTML = '';
 
      var contacts = contactList.returnAllContacts();
