@@ -51,7 +51,7 @@ list-style: none;
 .burger div{
     width:25px;
     height:3px;
-    background-color: #FFFBEE);
+    background-color: #FFFBEE;
     margin:5px;
 
 }
@@ -299,7 +299,7 @@ textarea {
     padding: 10px 32px;
     font-size: 34px;
 	transition: all 0.3s;
-	color: #FFFBEE;
+	color: ;
 
 }
 
