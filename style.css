@@ -1,28 +1,29 @@
 *{
     margin: 0px;
     padding: 0px;
-   box-sizing: border-box;
+
+	font-family: 'Poppins', sans-serif;
 }
 
-body{
-
-	background: #EEF7FF;
-}
+body {
+	background: #2E6E8D;
+	color: #FFFBEE;
+  }
 
 nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: #10275e;
-    font-family: 'Poppins', sans-serif;
+    background-color: #153240;
+	font-family: 'Poppins', sans-serif;
 
 }
 
 .logo{
-    color: rgba(236, 222, 222, 0.829);
+    color: #FFFBEE;
     text-transform: 5px;
-    font-size: 20px;
+    font-size: 35px;
 
 }
 .nav-links{
@@ -36,22 +37,21 @@ list-style: none;
 
 }
 .nav-links a {
-    color: rgba(236, 222, 222, 0.829);
+    color: #FFFBEE;
     text-decoration: none;
-    letter-spacing: 3px;
-    font-size: 16px;
+    letter-spacing: 2px;
+    font-size: 22px;
 }
 
 .burger {
 	display: none;
 	cursor: pointer;
 
-
 }
 .burger div{
     width:25px;
     height:3px;
-    background-color: rgba(236, 222, 222, 0.829);
+    background-color: #FFFBEE);
     margin:5px;
 
 }
@@ -96,7 +96,7 @@ list-style: none;
 	right: 0px;
 	height: 90vh;
 	top: 8vh;
-	background-color: #10275e;
+	background-color: #153240;
 	display:flex;
 	flex-direction:column;
 	align-items:center;
@@ -147,36 +147,48 @@ list-style: none;
 .addButton {
 	width: 200px;
     display: block;
-    margin: 0 auto 20px;
-    background-color: #FFF;
-    padding: 10px 32px;
-    border: 1px solid #e0e0e0;
-    font-size: 20px;
+    margin: 20px auto 20px;
+    padding: 22px;
+    border: 3px solid #FFFBEE;
+    font-size: 25px;
     outline: 0;
-    transition: all 0.3s;
+    transition: 0.3s;
     cursor: pointer;
-    font-family: 'Poppins', sans-serif;
-
+	font-family: 'Poppins', sans-serif;
+	overflow: hidden;
+	box-sizing: content-box;
+	background-color: transparent;
+	color: rgba(236, 222, 222, 0.829);
 }
 
+.addButton:hover{
+
+	border-radius: 35px;
+}
 
   .note {
 	position: relative;
 	padding-top: 5px;
 	border-radius: 10px;
-	background: #f1d556;
+	background: #ffe6b3;
 	min-height: 300px;
 	min-width: 300px;
 	left: 0;
 	top: 0;
-	border: 1px solid #f7d933;
+	border: 1px solid #ffe6b3;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	margin-left: 20px;
 	margin-right: 20px;
+	box-shadow: 2px 2px 5px 4px rgb(95, 95, 95);
 
 
   }
+
+	.note:hover {
+	box-shadow: 3px 3px 7px 4px rgb(70, 70, 70);
+
+	}
 
 
   .deleteButton {
@@ -244,32 +256,41 @@ textarea {
   .myplan{
 	text-align: center;
 	font-family: 'Poppins', sans-serif;
-}
-
-
-.myplan
-{
+	font-size: 20px;
 	margin-bottom: 20px;
+
 }
+.mw-100 {
+	min-width:100%;
+
+}
+.table-responsive{
+	min-width:100%;
+	min-height:100%;
+
+}
+.mh-100{
+	min-height:100%;
+
+}
+
+
 
  .myplan .space{
 	margin-top: 20px;
   }
-  .myplan .next{
-	display:inline-flex;
-  }
+
   .myplan table, td, tr{
-	border: 1px solid grey;
+	border: 1px solid #FFFBEE;
+
   }
   .myplan table{
 
-	width:1200px;
-	 height:605px;
+	height:600px;
+
+	 table-layout: fixed;
   }
-  .myplan td, tr{
-	width:150px;
-	height: 55;
-  }
+
 
   h3 {
 	width: 300px;
@@ -277,9 +298,8 @@ textarea {
     margin: 0 auto 20px;
     padding: 10px 32px;
     font-size: 34px;
-    transition: all 0.3s;
-	font-family: 'Poppins', sans-serif;
-	color:#10275e;
+	transition: all 0.3s;
+	color: #FFFBEE;
 
 }
 
@@ -301,7 +321,7 @@ h1{
   }
 
   .panel{
-	background:rgb(250,250,250);
+	background:ffe6b3;
 	padding:1em;
 	width:92.5%;
 	margin:auto;
@@ -323,7 +343,6 @@ h1{
   input::after{
 	width:100%;
 	height:10px;
-	background:red;
   }
 
   .naviList{
@@ -336,7 +355,7 @@ h1{
   .naviList li{
 	list-style:none;
 	display:inline-block;
-	  background:rgba(256,256,256,0.5);
+	  background: #47aad9;
 	  padding:0.7em;
 	  margin:0 0.1em;
 
