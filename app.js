@@ -139,7 +139,7 @@ $( ".inner-switch" ).on("click", function() {
 	  init = function () {
 
 		if (!testLocalStorage) {
-		  var message = "We are sorry but you cannot use localStorage";
+		  var message = "Brak połączenia z LocalStorage";
 		  saveNote = function () {
 			console.warn(message);
 		  };

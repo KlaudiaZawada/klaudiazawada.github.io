@@ -153,7 +153,11 @@ list-style: none;
 .dark * {
     background-color: #222;
     color: #e6e6e6;
-    border-color: #e6e6e6;
+    border-color: #6e6e6e;
+}
+.dark textarea {
+	background: #f1d556;
+	color:rgb(43, 43, 43);
 }
 
 
@@ -264,6 +268,7 @@ list-style: none;
   }
 
 textarea {
+	background: #f1d556;
 
 	position: absolute;
 	bottom: 10px;
@@ -271,8 +276,7 @@ textarea {
 	float:inline-end;
 	box-sizing: border-box;
 	min-height: 240px;
-	min-width: 240px;
-	background: transparent;
+	width: 240px;
 	left: 30px;
 	border: none;
   }
