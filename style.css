@@ -6,8 +6,8 @@
 }
 
 body {
-	background: #2E6E8D;
-	color: #FFFBEE;
+	background: #EEF7FF;
+
   }
 
 nav{
@@ -15,7 +15,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: #153240;
+    background-color: #10275e;
 	font-family: 'Poppins', sans-serif;
 
 }
@@ -40,7 +40,7 @@ list-style: none;
     color: #FFFBEE;
     text-decoration: none;
     letter-spacing: 2px;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .burger {
@@ -56,26 +56,6 @@ list-style: none;
 
 }
 
-.mynotes{
-	text-align: center;
-}
-
-.mynotes img
-{
-	width: 100%;
-	height: auto;
-}
-
-.mynotes p
-{
-	margin-bottom: 20px;
-}
-
-.mynotes figcaption
-{
-	margin-top: 8px;
-}
-
 
 @media screen and (max-width:1024px){
 	.nav-links{
@@ -86,7 +66,7 @@ list-style: none;
 
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:1155px){
 	body{
 		overflow-x:hidden;
 
@@ -94,9 +74,9 @@ list-style: none;
 	.nav-links{
     position: absolute;
 	right: 0px;
-	height: 90vh;
+	height: 80vh;
 	top: 8vh;
-	background-color: #153240;
+	background-color: #10275e;
 	display:flex;
 	flex-direction:column;
 	align-items:center;
@@ -144,12 +124,69 @@ list-style: none;
 	transform: rotate(45deg) translate(-5px,-6px);
 }
 
+/* Dark mode */
+.fa-moon {
+	color:#FFFBEE;
+	font-size: 24px;
+  }
+
+  .switch {
+	display: flex-end;
+
+    align-self: flex-end;
+    margin: 0.9375rem;
+}
+.inner-switch {
+	display: flex;
+    justify-content: space-around;
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 12px;
+    width: 3.125rem;
+	text-align: center;
+	color:#FFFBEE;
+
+}
+
+.dark,
+.dark * {
+    background-color: #222;
+    color: #e6e6e6;
+    border-color: #e6e6e6;
+}
+
+
+/* ------------------------------------- */
+
+.mynotes{
+	text-align: center;
+}
+
+.mynotes img
+{
+	width: 100%;
+	height: auto;
+}
+
+.mynotes p
+{
+	margin-bottom: 20px;
+}
+
+.mynotes figcaption
+{
+	margin-top: 8px;
+}
+
+
+
 .addButton {
 	width: 200px;
     display: block;
     margin: 20px auto 20px;
     padding: 22px;
-    border: 3px solid #FFFBEE;
+    border: 3px solid  #597ddf;
     font-size: 25px;
     outline: 0;
     transition: 0.3s;
@@ -157,8 +194,7 @@ list-style: none;
 	font-family: 'Poppins', sans-serif;
 	overflow: hidden;
 	box-sizing: content-box;
-	background-color: transparent;
-	color: rgba(236, 222, 222, 0.829);
+
 }
 
 .addButton:hover{
@@ -170,7 +206,7 @@ list-style: none;
 	position: relative;
 	padding-top: 5px;
 	border-radius: 10px;
-	background: #ffe6b3;
+	background: #f1d556;
 	min-height: 300px;
 	min-width: 300px;
 	left: 0;
@@ -180,13 +216,13 @@ list-style: none;
 	margin-bottom: 20px;
 	margin-left: 20px;
 	margin-right: 20px;
-	box-shadow: 2px 2px 5px 4px rgb(95, 95, 95);
+	box-shadow: 2px 2px 5px 2px rgb(76, 113, 124);
 
 
   }
 
 	.note:hover {
-	box-shadow: 3px 3px 7px 4px rgb(70, 70, 70);
+	box-shadow: 3px 3px 7px 4px rgb(47, 89, 136);
 
 	}
 
@@ -281,7 +317,7 @@ textarea {
   }
 
   .myplan table, td, tr{
-	border: 1px solid #FFFBEE;
+	border: 1px solid #6c7181;
 
   }
   .myplan table{
@@ -299,7 +335,8 @@ textarea {
     padding: 10px 32px;
     font-size: 34px;
 	transition: all 0.3s;
-	color: ;
+	font-family: 'Poppins', sans-serif;
+	color:#10275e;
 
 }
 
@@ -321,7 +358,7 @@ h1{
   }
 
   .panel{
-	background:ffe6b3;
+	background:#ffe6b3;
 	padding:1em;
 	width:92.5%;
 	margin:auto;

@@ -1,3 +1,13 @@
+$( ".inner-switch" ).on("click", function() {
+  if( $( "body" ).hasClass( "dark" )) {
+    $( "body" ).removeClass( "dark" );
+    $( ".inner-switch" ).text( "OFF" );
+  } else {
+    $( "body" ).addClass( "dark" );
+    $( ".inner-switch" ).text( "ON" );
+  }
+});
+
 (function(global){
     var contactsList = function(namesurname,mobile,email){
       return new contactsList.init(namesurname,mobile,email);
