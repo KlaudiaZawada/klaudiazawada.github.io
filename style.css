@@ -160,9 +160,21 @@ list-style: none;
 	background: #f1d556;
 	color:rgb(43, 43, 43);
 }
+/* ------------- INDEX -------------------*/
 
+p1{
+	font-weight: 900;
+	font-size: 60px;
+	color: rgb(39, 39, 39);
+}
 
-/* ------------------------------------- */
+p2{
+
+	font-size: 25px;
+	color:rgb(39, 39, 39);;
+}
+
+/* ---------------NOTATKI---------------------- */
 
 .mynotes{
 	text-align: center;
