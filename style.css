@@ -125,6 +125,27 @@ list-style: none;
 	transform: rotate(45deg) translate(-5px,-6px);
 }
 
+.fa-sticky-note {
+
+	font-size: 40px;
+  }
+.fa-calendar-alt{
+
+	font-size: 40px;
+
+}
+
+.fa-address-book{
+
+	font-size: 40px;
+
+
+}
+
+.fa-table{
+	font-size: 40px;
+
+}
 /* Dark mode */
 .fa-moon {
 	color:#FFFBEE;
@@ -154,7 +175,7 @@ list-style: none;
 .dark * {
     background-color: #222;
     color: #e6e6e6;
-    border-color: #6e6e6e;
+  border-color: #6e6e6e;
 }
 .dark textarea {
 	background: #f1d556;
