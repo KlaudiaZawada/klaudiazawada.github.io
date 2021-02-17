@@ -1,10 +1,10 @@
 $( ".inner-switch" ).on("click", function() {
   if( $( "body" ).hasClass( "dark" )) {
     $( "body" ).removeClass( "dark" );
-    $( ".inner-switch" ).text( "OFF" );
+    $( ".inner-switch" ).text( "WYŁ" );
   } else {
     $( "body" ).addClass( "dark" );
-    $( ".inner-switch" ).text( "ON" );
+    $( ".inner-switch" ).text( "WŁ" );
   }
 });
 
@@ -50,7 +50,7 @@ $( ".inner-switch" ).on("click", function() {
 
             return this.searchResults;
           }else{
-            console.log("There are no results");
+            console.log("Brak wyników");
           }
           return this;
         },
@@ -100,30 +100,7 @@ form.addEventListener('submit', function(){
    event.preventDefault();
 });
 
-var searcherForm = document.getElementById('searcher');
-searcherForm.addEventListener('submit', function(){
-  var contactResults;
-  if(contactResults !== undefined){
-    contactResults = null;
-  }
-  if(!window.contactList){
-    window.contactList = $ab();
-  }else{
-    contactResults = contactList.searchContacts(searcherForm.searcher.value);
-  }
-  document.getElementById('contactResults').innerHTML = '';
-  if(contactResults.length>0){
 
-    for(var i = 0;i<contactResults.length;i++){
-      document.getElementById('contactResults').innerHTML += '<div class="contact-item">Imię nazwiskk:'+contactResults[i].namesurname+'<br>Number telefonu::'+contactResults[i].mobile+'<br>Email:'+contactResults[i].email+'</div><hr>';
-    }
-  } else{
-   document.getElementById('contactResults').innerHTML += '<div class="contact-item">Brak konatktu.</div><hr>';
-  }
-
-
-  event.preventDefault();
-});
 
 document.getElementById('js-contact-list').addEventListener('click', function(){
     if(window.contactList){
@@ -133,7 +110,7 @@ document.getElementById('js-contact-list').addEventListener('click', function(){
      console.log(contacts);
       if(contacts.length>0){
         for(var i = 0;i<contacts.length;i++){
-        document.getElementById('panel-View').innerHTML += '<div class="contact-item">Imię i Nazwisko:'+contacts[i].namesurname+'<br>Numer telefon:'+contacts[i].mobile+'<br>Email:'+contacts[i].email+'</div><hr>';
+        document.getElementById('panel-View').innerHTML += '<div class="contact-item">Imię i Nazwisko:  '+contacts[i].namesurname+'<br>Numer telefonu:  '+contacts[i].mobile+'<br>Email:  '+contacts[i].email+'<br></div><hr>';
         }
       }else{
         document.getElementById('panel-View').innerHTML += '<div class="contact-item">Brak kontaktów.</div><hr>';
@@ -141,18 +118,13 @@ document.getElementById('js-contact-list').addEventListener('click', function(){
     }
     document.getElementById('panel-View').style.display = 'block';
 
-    document.getElementById('panel-searcher').style.display = 'none';
+
     document.getElementById('panel-contact').style.display = 'none';
   });
 
-  document.getElementById('js-contact-search').addEventListener('click', function(){
-    document.getElementById('panel-View').style.display = 'none';
-    document.getElementById('panel-searcher').style.display = 'block';
-    document.getElementById('panel-contact').style.display = 'none';
-  });
 
   document.getElementById('js-contact-add').addEventListener('click', function(){
     document.getElementById('panel-View').style.display = 'none';
-    document.getElementById('panel-searcher').style.display = 'none';
+
     document.getElementById('panel-contact').style.display = 'block';
   });

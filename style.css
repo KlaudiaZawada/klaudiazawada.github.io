@@ -23,7 +23,6 @@ nav{
 
 .logo{
     color: #FFFBEE;
-    text-transform: 5px;
     font-size: 35px;
 
 }
@@ -161,7 +160,7 @@ list-style: none;
     margin: 0.9375rem;
 }
 .inner-switch {
-	display: flex;
+
     justify-content: space-around;
     display: inline-block;
     cursor: pointer;
@@ -183,6 +182,42 @@ list-style: none;
 	background: #f1d556;
 	color:rgb(43, 43, 43);
 }
+
+.dark .panel{
+	background: #222;
+	padding:1em;
+	width:92.5%;
+	margin:auto;
+	max-width:30em;
+  }
+
+.dark .naviList li{
+	list-style:none;
+	display:inline-block;
+	  background: #222;
+
+	  padding:0.7em;
+	  margin:0 0.1em;
+
+	  width: 200px;
+	  display: block;
+	  margin: 20px auto 20px;
+	  padding: 22px;
+	  border: 3px solid  #597ddf;
+	  font-size: 25px;
+	  outline: 0;
+	  transition: 0.3s;
+	  cursor: pointer;
+	  font-family: 'Poppins', sans-serif;
+	  overflow: hidden;
+	  box-sizing: content-box;
+
+  }
+
+  .naviList li:hover{
+
+	  border-radius: 35px;
+  }
 /* ------------- INDEX -------------------*/
 
 p1{
@@ -398,11 +433,13 @@ h1{
   }
 
   .panel{
-	background:#FFFBEE;
+	background:#89a9be;
 	padding:1em;
 	width:92.5%;
 	margin:auto;
 	max-width:30em;
+	font-family: 'Poppins', sans-serif;
+	border-radius: 35px;
   }
 
   input{
@@ -411,6 +448,7 @@ h1{
 	font-size:1em;
 	margin-top:0.5em;
 	padding:0.5em;
+	font-family: 'Poppins', sans-serif;
   }
 
   input:focus{
@@ -427,16 +465,25 @@ h1{
 	max-width:30em;
 	text-align:center;
 	margin:auto;
+	font-family: 'Poppins', sans-serif;
   }
 
   .naviList li{
 	list-style:none;
 	display:inline-block;
-	  background: #10275e;
 	  padding:0.7em;
 	  margin:0 0.1em;
-
-
+	  width: 150px;
+	  margin: 20px auto 20px;
+	  padding: 22px;
+	  border: 3px solid  #597ddf;
+	  font-size: 25px;
+	  outline: 0;
+	  transition: 0.3s;
+	  cursor: pointer;
+	  font-family: 'Poppins', sans-serif;
+	  overflow: hidden;
+	  box-sizing: content-box;
   }
 
   .naviList li .active{
