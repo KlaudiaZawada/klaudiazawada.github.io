@@ -146,6 +146,8 @@ list-style: none;
 	font-size: 40px;
 
 }
+
+
 /* Dark mode */
 .fa-moon {
 	color:#FFFBEE;
@@ -396,7 +398,7 @@ h1{
   }
 
   .panel{
-	background:#ffe6b3;
+	background:#FFFBEE;
 	padding:1em;
 	width:92.5%;
 	margin:auto;
@@ -430,7 +432,7 @@ h1{
   .naviList li{
 	list-style:none;
 	display:inline-block;
-	  background: #47aad9;
+	  background: #10275e;
 	  padding:0.7em;
 	  margin:0 0.1em;
 
